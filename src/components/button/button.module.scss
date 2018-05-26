@@ -1,4 +1,4 @@
-.button {
+%button {
   margin: 8px;
   padding: 12px;
   border: none;
@@ -18,7 +18,7 @@
 }
 
 .default {
-  composes: button;
+  @extend %button;
   color: #fc3a51;
   background: white;
 
@@ -28,7 +28,7 @@
 }
 
 .primary {
-  composes: button;
+  @extend %button;
   color: white;
   background: #fc3a51;
 
