@@ -1,0 +1,31 @@
+.navigation {
+    background-color: #222222;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation > h1,
+.navigation a {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.title {
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.linkWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.linkWrapper a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
