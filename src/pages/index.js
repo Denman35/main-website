@@ -1,14 +1,18 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-import style from './style.module.css'
+import style from './index.module.css';
 
 const IndexPage = () => (
-  <div>
-    <h1>Bold</h1>
-    <h1>Innovative</h1>
-    <h1>Design</h1>
-    <button>Contact Us</button>
+  <div className={style.backgroundImage}>
+    <div className={style.overlay}>
+      <div className={style.textCont}>
+        <h1>Bold</h1>
+        <h1>Innovative</h1>
+        <h1>Design</h1>
+        <button className={style.button}>Contact Us</button>
+      </div>
+    </div>
   </div>
 )
 
