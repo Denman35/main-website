@@ -8,6 +8,7 @@
 .overlay {
     background-color: rgba(73,73,73,.73);
     height: 100%;
+    position: relative;
 }
 
 .overlay h1 {
@@ -21,6 +22,8 @@
 
 .textCont {
     padding: 100px 0 0 100px;
+    z-index: 1;
+    position: relative;
 }
 
 .button {
@@ -40,4 +43,18 @@
 .button:active {
     box-shadow: none;
     background-color: #f13349;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 0;
+  width: 100%;
+}
+
+.lines > path {
+  stroke: #CCC;
+  stroke-opacity: 0.15;
+  stroke-width: 2;
 }

@@ -8,17 +8,17 @@ import './index.css';
 const Layout = ({ children, data }) => (
   <div>
     <Helmet>
-        <meta charSet="utf-8" />
-        <title>Denman35</title>
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" />
+      <meta charSet="utf-8" />
+      <title>Denman35</title>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" />
     </Helmet>
     <Nav siteTitle="DENMAN35" />
-      {children()}
+    {children()}
   </div>
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.func,
-}
+};
 
-export default Layout
+export default Layout;

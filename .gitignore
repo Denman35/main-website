@@ -5,4 +5,9 @@ yarn-error.log
 
 # Build directory
 /public
+
+# Editor Specific
+*.swp
+
+# Platform Specific
 .DS_Store
