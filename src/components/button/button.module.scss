@@ -1,0 +1,38 @@
+.button {
+  margin: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+  outline: none;
+
+  &:active {
+      box-shadow: none;
+  }
+}
+
+.button:active {
+  box-shadow: none;
+}
+
+.default {
+  composes: button;
+  color: #fc3a51;
+  background: white;
+
+  &:active {
+    background: #f4f4f4;
+  }
+}
+
+.primary {
+  composes: button;
+  color: white;
+  background: #fc3a51;
+
+  &:active {
+      background: #f13349; 
+  }
+}
