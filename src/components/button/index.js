@@ -3,11 +3,6 @@ import PropTypes from 'prop-types';
 
 import style from './button.module.scss';
 
-export const ButtonTypes = {
-  primary: style.primary,
-  default: style.default 
-};
-
 const Button = ({ children, type }) => (
   <button className={type}>
     {children}
@@ -20,7 +15,11 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  type: ButtonTypes.default
+  type: style.default 
 };
+
+export const PrimaryButton = props => (
+  <Button {...props} type={style.primary} />
+);
 
 export default Button;
