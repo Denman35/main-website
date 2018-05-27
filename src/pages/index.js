@@ -65,7 +65,8 @@ class IndexPage extends React.Component {
               <div className={style.info}>
                 <h4>
                   <strong>Denman35</strong>
-                  &nbsp;| Chicago, IL</h4>
+                  &nbsp;| Chicago, IL
+                </h4>
               </div>
               <div className={style.taglineMobile}>
                 <h1>Bold</h1>
@@ -80,12 +81,8 @@ class IndexPage extends React.Component {
                 </h1>
               </div>
               <div className={style.buttonWrapper}>
-                <PrimaryButton>
-                  Contact Us
-                </PrimaryButton>
-                <SecondaryButton>
-                  Portfolio
-                </SecondaryButton>
+                <PrimaryButton>Contact Us</PrimaryButton>
+                <SecondaryButton>Portfolio</SecondaryButton>
               </div>
             </div>
           </div>
