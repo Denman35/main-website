@@ -2,10 +2,11 @@ import React from 'react';
 import Link from 'gatsby-link';
 import anime from 'animejs';
 
-import style from './index.module.css';
+import style from './index.module.scss';
 
 class IndexPage extends React.Component {
   componentDidMount() {
+    // Background Line animations
     const paths = document.querySelectorAll('path');
     paths.forEach(p => {
       const offset = anime.setDashoffset(p);
@@ -57,7 +58,7 @@ class IndexPage extends React.Component {
             <path d="M360 160V283L440 363V560" />
           </svg>
 
-          <div className={style.textCont}>
+          <div className={style.content}>
             <h1>Bold</h1>
             <h1>Innovative</h1>
             <h1>Design</h1>
