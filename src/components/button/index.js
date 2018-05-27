@@ -22,4 +22,8 @@ export const PrimaryButton = props => (
   <Button {...props} type={style.primary} />
 );
 
+export const SecondaryButton = props => (
+  <Button {...props} type={style.secondary} />
+);
+
 export default Button;

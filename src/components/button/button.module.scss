@@ -1,6 +1,6 @@
 %button {
   margin: 8px;
-  padding: 12px;
+  padding: 12px 24px;
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -33,6 +33,16 @@
   background: #fc3a51;
 
   &:active {
-      background: #f13349; 
+    background: #f13349;
+  }
+}
+
+.secondary {
+  @extend %button;
+  color: white;
+  background: #4F4F4F;
+
+  &:active {
+    background: #424242;
   }
 }
