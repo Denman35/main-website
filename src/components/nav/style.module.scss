@@ -50,13 +50,13 @@
     }
 }
 
-@media (max-width: $breakpoint-phone + 20px) {
+@media (max-width: $breakpoint-phone-max) {
     .linkWrapper {
         display: none;
     }
 }
 
-@media (min-width: $breakpoint-phone) {
+@media (min-width: $breakpoint-tablet-min) {
     .menuIcon {
         display: none;
     }

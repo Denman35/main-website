@@ -22,7 +22,7 @@
         line-height: 82px;
     }
 
-    @media (max-width: $breakpoint-phone) {
+    @media (max-width: $breakpoint-phone-max) {
         h1 {
             font-size: 64px;
             line-height: 52px;
@@ -53,16 +53,47 @@
             margin-bottom: 33px;
         }
 
-        @media (max-width: $breakpoint-phone) {
+        @media (max-width: $breakpoint-phone-max) {
             display: none;
         }
     }
 
     > .taglineMobile {
         margin-bottom: 10px;
-        @media (min-width: $breakpoint-phone) {
+        @media (min-width: $breakpoint-laptop-min) {
             display: none;
         }
+    }
+
+    > .tagline {
+        h1 {
+            font-size: 72px;
+            font-weight: normal;
+        }
+
+        .you {
+            font-weight: bold;
+            color: #EB5757;
+        }
+        @media (max-width: $breakpoint-tablet-max) {
+            display: none;
+        }
+    }
+
+    > .buttonWrapper {
+        margin-bottom: 70px;
+        @media (max-width: $breakpoint-tablet-max) {
+            margin-bottom: 0px;
+        }
+    }
+
+    @media (min-width: $breakpoint-laptop-min) and
+        (max-width: $breakpoint-laptop-max) {
+        width: 760px;
+    }
+
+    @media (min-width: $breakpoint-desktop-min) {
+        width: 950px;
     }
 }
 

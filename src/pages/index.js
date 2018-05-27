@@ -72,7 +72,14 @@ class IndexPage extends React.Component {
                 <h1>Innovative</h1>
                 <h1>Design</h1>
               </div>
-              <div>
+              <div className={style.tagline}>
+                <h1>
+                  <strong>Bold, Innovative</strong>
+                  &nbsp;designs that express
+                  <span className={style.you}> you</span>
+                </h1>
+              </div>
+              <div className={style.buttonWrapper}>
                 <PrimaryButton>
                   Contact Us
                 </PrimaryButton>
