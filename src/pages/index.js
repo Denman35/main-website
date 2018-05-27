@@ -2,10 +2,13 @@ import React from 'react';
 import Link from 'gatsby-link';
 import anime from 'animejs';
 
-import style from './index.module.css';
+import { PrimaryButton, SecondaryButton } from 'components/button';
+
+import style from './index.module.scss';
 
 class IndexPage extends React.Component {
   componentDidMount() {
+    // Background Line animations
     const paths = document.querySelectorAll('path');
     paths.forEach(p => {
       const offset = anime.setDashoffset(p);
@@ -57,11 +60,31 @@ class IndexPage extends React.Component {
             <path d="M360 160V283L440 363V560" />
           </svg>
 
-          <div className={style.textCont}>
-            <h1>Bold</h1>
-            <h1>Innovative</h1>
-            <h1>Design</h1>
-            <button className={style.button}>Contact Us</button>
+          <div className={style.contentWrapper}>
+            <div className={style.content}>
+              <div className={style.info}>
+                <h4>
+                  <strong>Denman35</strong>
+                  &nbsp;| Chicago, IL
+                </h4>
+              </div>
+              <div className={style.taglineMobile}>
+                <h1>Bold</h1>
+                <h1>Innovative</h1>
+                <h1>Design</h1>
+              </div>
+              <div className={style.tagline}>
+                <h1>
+                  <strong>Bold, Innovative</strong>
+                  &nbsp;designs that express
+                  <span className={style.you}> you</span>
+                </h1>
+              </div>
+              <div className={style.buttonWrapper}>
+                <PrimaryButton>Contact Us</PrimaryButton>
+                <SecondaryButton>Portfolio</SecondaryButton>
+              </div>
+            </div>
           </div>
         </div>
       </div>
