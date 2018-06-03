@@ -1,0 +1,13 @@
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+  overflow: hidden;
+  margin: 8px;
+  background: #f6f6f6;
+
+  .content {
+    margin: 8px;
+  }
+}
